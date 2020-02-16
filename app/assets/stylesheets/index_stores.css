@@ -1,0 +1,43 @@
+#stores .entry {
+  overflow: auto;
+  margin-top: 1em;
+  border-bottom: 1px dotted #77d;
+}
+
+#stores .title {
+  font-size: 120%;
+  font-family: sans-serif;
+}
+
+#stores .entry img {
+  width: 80px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+#stores .entry h3 {
+  margin-top: 0;
+  margin-bottom: 2px;
+  color: #227;
+}
+
+#stores .entry p {
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+#stores .entry .price_line {
+  clear: both;
+  margin-bottom: 0.5em;
+}
+
+#stores .entry .add_to_cart {
+  position: relative;
+}
+
+#stores .entry .price {
+  color: #44a;
+  font-weight: bold;
+  margin-right: 2em;
+}
