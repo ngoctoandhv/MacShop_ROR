@@ -1,0 +1,44 @@
+.container {
+  width: 1200px;
+  margin: 0px auto;
+}
+#banner {
+  background: #474e50;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #d8f1d8;
+  text-align: center;
+}
+
+/* #banner img {
+  width: 50px;
+  float: left;
+  padding-left: 5px;
+} */
+
+#columns {
+  background: #474e50;
+}
+
+#main {
+  margin-left: 17em;
+  padding-top: 4ex;
+  padding-left: 2em;
+  background: white;
+}
+
+#side {
+  float: left;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  width: 16em;
+  background: #474e50;
+}
+
+#side a {
+  color: #bfb;
+  font-size: small;
+}
