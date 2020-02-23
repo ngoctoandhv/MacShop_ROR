@@ -21,10 +21,13 @@
       </div>
       <div id="columns">
           <div id="side">
-              <a href="/">Home</a><br />
-              <a href="#">FAQ</a><br />
-              <a href="#">News</a><br />
-              <a href="#">Contact</a><br />
+            <div id="cart">
+              <%= render current_cart %>  
+            </div>
+            <a href="/">Home</a><br />
+            <%= link_to "Product", products_path %> <br />
+            <a href="#">News</a><br />
+            <a href="#">Contact</a><br />
           </div>
           <div id="main">
               <%= yield %>

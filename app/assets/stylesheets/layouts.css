@@ -20,25 +20,40 @@
 
 #columns {
   background: #474e50;
+  display: flex;
+  justify-content: space-between;
 }
 
 #main {
-  margin-left: 17em;
-  padding-top: 4ex;
+  width: 65%;
+  padding-top: 1em;
   padding-left: 2em;
   background: white;
 }
 
 #side {
-  float: left;
+  width: 30%;
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 16em;
   background: #474e50;
 }
 
 #side a {
   color: #bfb;
   font-size: small;
+}
+
+/* Cart sidebar Style */
+#cart,
+#cart table {
+  font-size: smaller;
+  color: white;
+  padding-bottom: 1em;
+}
+
+#cart table {
+  border-top: 1px dotted #595;
+  border-bottom: 1px dotted #595;
+  margin-bottom: 10px;
 }
