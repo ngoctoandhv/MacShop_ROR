@@ -5,6 +5,7 @@ class Product < ApplicationRecord
   validates :image_url, :format => { :with => %r{\.(gif|jpg|png)\Z}i, :message => 'Just received file GIF, JPG, PNG'}
 
   has_many :line_items
+  has_many :orders, :through => :line_items
   before_destroy :check_if_has_line_item
 
   private
