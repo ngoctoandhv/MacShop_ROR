@@ -18,8 +18,10 @@
       </div>
       <div id="columns">
           <div id="side">
-            <div id="cart">
-              <%= render current_cart %>  
+            <div id="cart"> 
+                <%= hide_cart_if(current_cart.line_items.empty?, :id => "cart") do %>
+                <%= render current_cart %> 
+                <% end %>
             </div>
             <a href="/">Home</a><br />
             <%= link_to "Product", products_path %> <br />

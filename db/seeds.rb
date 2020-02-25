@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.delete_all
-Product.create(:title => 'Macbook Air 13 128GB MQD32SA/A (2017)',
+Product.create(:title => 'Macbook Air 13 128GB MQD32SA/A',
     :description => 
     %{
       Macbook Air 13 128 GB MQD32SA/A (2017) với thiết kế không thay đổi, vỏ nhôm sang trọng, siêu mỏng và siêu nhẹ, hiệu năng được nâng cấp, thời lượng pin cực lâu,.
