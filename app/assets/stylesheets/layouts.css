@@ -57,3 +57,38 @@
   border-bottom: 1px dotted #595;
   margin-bottom: 10px;
 }
+
+/* Order form style */
+.mac_form fieldset {
+  background: #efe;
+}
+
+.mac_form legend {
+  color: #dfd;
+  background: #141;
+  font-family: sans-serif;
+  padding: 0.2em 1em;
+}
+
+.mac_form label {
+  width: 5em;
+  float: left;
+  text-align: right;
+  padding-top: 0.2em;
+  margin-right: 0.1em;
+  display: block;
+}
+
+.mac_form select,
+.mac_form textarea,
+.mac_form input {
+  margin-left: 0.5em;
+}
+
+.mac_form .submit {
+  margin-left: 4em;
+}
+
+.mac_form div {
+  margin: 0.5em 0;
+}
