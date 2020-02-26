@@ -23,12 +23,22 @@
                 <%= render current_cart %> 
                 <% end %>
             </div>
-            <%= link_to "Signup", signup_path %> <br /> 
-            <%= link_to "Login", login_path %> <br /> 
             <a href="/">Home</a><br />
-            <%= link_to "Product", products_path %> <br />
             <a href="#">News</a><br />
             <a href="#">Contact</a><br />
+
+            <% if session[:user_id] %>
+                <br/>
+                <%= link_to 'Orders', '/orders' %><br />
+                <%= link_to 'Products', '/products' %><br />
+                <%= link_to 'Users', '/users' %><br />
+                <%= button_to 'Logout', '/logout', :method => :delete %>
+                <br/>
+            <% else %>
+                <br/>
+                <%= link_to 'Log In', login_path %><br />
+                <%= link_to "Signup", signup_path %> <br /> 
+            <% end %>
           </div>
           <div id="main">
               <%= yield %>
