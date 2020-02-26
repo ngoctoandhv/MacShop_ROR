@@ -1,5 +1,4 @@
 class OrdersController < ApplicationController
-  skip_before_filter :authorize, :only => [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
   
 
@@ -39,7 +38,7 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
-        NotifierMailer.order_received(@order).deliver
+        # NotifierMailer.order_received(@order).deliver
         
         format.html { redirect_to root_url, notice: 'Order was successfully created.' }
         format.json { render :show, status: :created, location: @order }
